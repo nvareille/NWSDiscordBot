@@ -13,7 +13,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   
   if (process.env.test == 1)
-	  exit(0);
+	  process.exit(0);
 });
 
 function ConnectQuery(q, v)
