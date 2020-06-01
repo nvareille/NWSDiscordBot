@@ -9,8 +9,6 @@ var con = mysql.createConnection({
   database: "discord"
 });
 
-console.log(process.env);
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -38,7 +36,5 @@ client.on('message', msg =>
 		msg.reply('pong');
 	}
 });
-
-
 
 client.login(process.env.discord_token);
